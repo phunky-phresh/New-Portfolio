@@ -1,9 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
-import { Link } from 'gatsby';
-import { Row, Col } from 'react-bootstrap';
+import Skills from '../components/skills';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 import cv from '../assets/images/CV.pdf';
@@ -20,12 +18,15 @@ const IndexPage = () => (
         id="about"
       >
         <div className="w-100">
-          <h1 className="mb-0">
+          <h1 className="mb-3">
             {config.firstName}
             {config.lastName}
           </h1>
           <div className="subheading mb-5">
-          <a href={cv}>Resume</a><span> · </span>
+          <span className="box">
+          <a href={cv}>Resume</a>
+          </span>
+          <span> · </span>
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
@@ -69,7 +70,7 @@ const IndexPage = () => (
                 <li>Hard coded a realtime messaging app with JavaScript through the React framework.</li>
                 <li>Implemented Firebase Firestore for secure login and as a more flexible database for a one-week project.</li>
               </ul>
-                <img class="project-img" src={mixedbiz} />
+                <img alt="screen-shot-mixedBiz" className="project-img" src={mixedbiz} />
 
 
             </div>
@@ -91,7 +92,7 @@ const IndexPage = () => (
                 <li>Individual user sign up and login. User reviews and content contribution.</li>
               </ul>
 
-              <img class="project-img" src={boardfiles} />
+              <img alt="screenshot-of-boardFiles" className="project-img" src={boardfiles} />
 
             </div>
             <div className="resume-date text-md-right">
@@ -128,7 +129,7 @@ const IndexPage = () => (
                 base benefits. Dramatically visualize customer directed
                 convergence without revolutionary ROI.
               </p>
-              <img class="project-img" src={tictactoe} />
+              <img alt="screenshot-of-ticTacToe" className="project-img" src={tictactoe} />
 
             </div>
             <div className="resume-date text-md-right">
@@ -191,56 +192,9 @@ const IndexPage = () => (
           <div className="subheading mb-3">
             Programming Languages &amp; Tools
           </div>
-          <ul className="list-inline dev-icons">
-            <li className="list-inline-item">
-              <i className="fab fa-html5"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-css3-alt"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-js-square"></i>
-            </li>
+          <Skills />
 
-            <li className="list-inline-item">
-              <i className="fab fa-react"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-node-js"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-sass"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-npm"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-bootstrap"></i>
-            </li>
-            <li className="list-inline-item boxes">
 
-            </li>
-          </ul>
-
-          <div className="subheading mb-3">Workflow</div>
-          <ul className="fa-ul mb-0">
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Functional Teams
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -252,16 +206,53 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Get in Touch</h2>
-          <ul className="fa-ul mb-0">
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
-            </li>
-          </ul>
+
+
+
+          <div className="social-icons">
+            {config.socialLinks.map(social => {
+              const { icon, url } = social;
+              return (
+                <a key={url} href={url}>
+                  <i className={`fab ${icon}`}></i>
+                </a>
+              );
+            })}
+            <a href={`mailto:${config.email}`}>
+
+                <i className=" fa fa-envelope"></i>
+
+            </a>
+            <a href={cv}>
+
+                <i className=" fa fa-address-card"></i>
+            </a>
+
+          </div>
+
         </div>
       </section>
     </div>
   </Layout>
 );
+// <div className="subheading mb-3">Workflow</div>
+// <ul className="fa-ul mb-0">
+//   <li>
+//     <i className="fa-li fa fa-check"></i>
+//     Effective Communication
+//   </li>
+//   <li>
+//     <i className="fa-li fa fa-check"></i>
+//     Reliable
+//   </li>
+//   <li>
+//     <i className="fa-li fa fa-check"></i>
+//     Willing to conri
+//   </li>
+//   <li>
+//     <i className="fa-li fa fa-check"></i>
+//     Agile Development &amp; Scrum
+//   </li>
+// </ul>
 
 export default IndexPage;

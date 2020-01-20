@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
+import favicon from '../assets/img/nc.png'
 import '../assets/sass/resume.scss';
 
 class Layout extends Component {
@@ -22,12 +22,12 @@ class Layout extends Component {
         render={data => (
           <>
             <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Resume' },
-                { name: 'keywords', content: 'site, web' },
-              ]}
+              title="Nick Cooney|Software Engineer"
+
+
+
             >
+            <link rel="icon" href={favicon}/>
               <html lang="en" />
             </Helmet>
             <div className={'main-body'}>{children}</div>

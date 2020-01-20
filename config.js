@@ -22,6 +22,7 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/nicholas-cooney/',
     },
+
   ],
   email: 'nick.cooney94@gmail.com',
 };
