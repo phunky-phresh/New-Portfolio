@@ -74,10 +74,10 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $info;
-    }
+  .list-inline-item i, svg path.hover{
+    // &:hover {
+    //   color: $info;
+    // }
   }
 }
 
@@ -91,4 +91,11 @@ p.lead {
   padding: 10px;
   margin-left: 10px;
   border-radius: 3px;
+}
+.active a{
+  color: $info !important;
+}
+.boxes {
+  height: 100px;
+  width: 100px;
 }
