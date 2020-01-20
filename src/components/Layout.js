@@ -21,12 +21,8 @@ class Layout extends Component {
         `}
         render={data => (
           <>
-            <Helmet
-              title="Nick Cooney|Software Engineer"
-
-
-
-            >
+            <Helmet>
+            <title>Nick Cooney|Software Engineer</title>
             <link rel="icon" href={favicon}/>
               <html lang="en" />
             </Helmet>
