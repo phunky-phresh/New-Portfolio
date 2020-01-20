@@ -3,8 +3,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 import { Link } from 'gatsby';
+import { Row, Col } from 'react-bootstrap';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+import cv from '../assets/images/CV.pdf';
+import mixedbiz from '../assets/img/mixedBiz.png'
+import boardfiles from '../assets/img/boardFiles.png'
+import tictactoe from '../assets/img/ticTacToe.png'
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -16,17 +22,15 @@ const IndexPage = () => (
         <div className="w-100">
           <h1 className="mb-0">
             {config.firstName}
-            <span className="text-primary">{config.lastName}</span>
+            {config.lastName}
           </h1>
           <div className="subheading mb-5">
-            {config.address} · {config.phone} ·
+          <a href={cv}>Resume</a> ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I am experienced in leveraging agile frameworks to provide a robust
-            synopsis for high level overviews. Iterative approaches to corporate
-            strategy foster collaborative thinking to further the overall value
-            proposition.
+          I’m a recent Software Engineering Immersive Graduate from General Assembly, Sydney. After completing my Bachelor of Creative Arts: Graphic Design degree, i’ve spent time working in a range of industries both in Australia and abroad.
+          I consistently aim to improve on my own ability and skills while maintaining effective communication with colleagues and clients. I take pride in delivering my best and being a reliable employee. I’m excited to see what new opportunities become available in Software Engineering as i do enjoy designing, but to deliver a finished, interactive product is my true passion.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -45,57 +49,69 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
+        id="projects"
       >
         <div className="w-100">
-          <h2 className="mb-5">Experience</h2>
+          <h2 className="mb-5">Projects</h2>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">mixedBiz.</h3>
+              <div className="subheading mb-3">React.js | Firebase</div>
+
+
               <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
+                mixedBiz. is an idea to streamline the live music booking process. By creating a specific social platform for live performers to connect with venues, mixedBiz aims to create a simpler and easier booking system, while also creating better relationships between artists and performance spaces.
               </p>
+              <ul>
+                <li>Front end built with React.js and database with Firebase</li>
+                <li>First version includes a realtime messaging platform.</li>
+                <li>Hard coded a realtime messaging app with JavaScript through the React framework.</li>
+                <li>Implemented Firebase Firestore for secure login and as a more flexible database for a one-week project.</li>
+              </ul>
+                <img class="project-img" src={mixedbiz} />
+
+
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
+              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://musos-8f0c3.firebaseapp.com/#/">Live Demo</a></span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">Board Files</h3>
+              <div className="subheading mb-3">Ruby on Rails</div>
               <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
+                Board Files is my first project using a database to store, create, update and delete data. Board files is a platform to add and review snowboards. It would also include educational content to give better understanding of the technology involved with snowboard design, technology that can have significant influence over a snowboards compatibility with a rider based off their experience, where they're using it and how they're using it.
               </p>
+              <ul>
+                <li>Built front and back end with Ruby on Rails.</li>
+                <li>First individual project involving the use of a database. Used Postgresql and deployed on Heroku</li>
+                <li>Individual user sign up and login. User reviews and content contribution.</li>
+              </ul>
+
+              <img class="project-img" src={boardfiles} />
+
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
+              <span className="box"><a href="https://github.com/phunky-phresh/project01">Git Repo</a></span><span className="box"><a href="https://board-reviews.herokuapp.com/">Live Demo</a></span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Junior Web Designer</h3>
+              <h3 className="mb-0">Social Bet</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
               <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
+                An app desgined to facilitate and uphold the gentleman's agreement.
               </p>
+              <ul>
+                <li>Focused on front-end React aspect of this group project. </li>
+                <li>Experienced working as a group, communicating through stand-ups and problem solving as a team</li>
+                <li>Worked on delegated tasks and main user functionality of application (the betting process)</li>
+                <li>Linking up front-end client with back end database to create and save new data, update and delete.</li>
+              </ul>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">July 2010 - December 2011</span>
@@ -104,7 +120,7 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0">Web Design Intern</h3>
+              <h3 className="mb-0">Tic Tac Toe</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
               <p>
                 Collaboratively administrate empowered markets via plug-and-play
@@ -112,9 +128,11 @@ const IndexPage = () => (
                 base benefits. Dramatically visualize customer directed
                 convergence without revolutionary ROI.
               </p>
+              <img class="project-img" src={tictactoe} />
+
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">September 2008 - June 2010</span>
+              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
             </div>
           </div>
         </div>

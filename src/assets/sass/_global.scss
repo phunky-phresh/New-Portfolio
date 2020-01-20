@@ -20,13 +20,15 @@ h5,
 h6 {
   @include heading-font;
   font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+  // text-transform: uppercase;
+  color: $nueGray;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
+  color: $info;
+  font-weight: 500;
 }
 
 h2 {
@@ -65,7 +67,7 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: $info;
     }
   }
 }
@@ -74,7 +76,19 @@ p.lead {
   font-size: 3rem;
   .list-inline-item i {
     &:hover {
-      color: $primary;
+      color: $info;
     }
   }
+}
+
+.project-img {
+  width: 100%;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.box {
+  border: 1px solid $info;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
 }
