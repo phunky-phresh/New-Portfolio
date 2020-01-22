@@ -59,8 +59,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">mixedBiz.</h3>
               <div className="subheading mb-3">React.js | Firebase</div>
-
-
+              <h4 style={{color: '#f76550'}} className="mb-3">*Currently refining messaging component</h4>
               <p>
                 mixedBiz. is an idea to streamline the live music booking process. By creating a specific social platform for live performers to connect with venues, mixedBiz aims to create a simpler and easier booking system, while also creating better relationships between artists and performance spaces.
               </p>
