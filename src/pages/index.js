@@ -102,7 +102,7 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Social Bet</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
+              <div className="subheading mb-3">React | Ruby on Rails</div>
               <p>
                 An app desgined to facilitate and uphold the gentleman's agreement.
               </p>
@@ -121,7 +121,7 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
               <h3 className="mb-0">Tic Tac Toe</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
+              <div className="subheading mb-3">JavaScript | HTML5/CSS3 | jQuery</div>
               <p>
                 Collaboratively administrate empowered markets via plug-and-play
                 networks. Dynamically procrastinate B2C users after installed
