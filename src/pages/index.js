@@ -123,10 +123,7 @@ const IndexPage = () => (
               <h3 className="mb-0">Tic Tac Toe</h3>
               <div className="subheading mb-3">JavaScript | HTML5/CSS3 | jQuery</div>
               <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
+                Tic Tac Toe - Project0. This was my first major project involving JavaScript, jQuery and HTML5/CSS3 to build the classic game tic tac toe. The main learning curve was definitely the implenetation of my our logic to determine wins, losses and draws in a two player game.
               </p>
               <img alt="screenshot-of-ticTacToe" className="project-img" src={tictactoe} />
 
