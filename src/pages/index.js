@@ -79,6 +79,11 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">mixedBiz.</h3>
               <div className="subheading mb-3">React.js | Firebase</div>
+              <div className=" mb-3">
+              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://musos-8f0c3.firebaseapp.com/#/">Live Demo</a></span>
+              </div>
+
+
               <h4 style={{color: '#f76550'}} className="mb-3">*Currently refining messaging component</h4>
               <p>
                 mixedBiz. is an idea to streamline the live music booking process. By creating a specific social platform for live performers to connect with venues, mixedBiz aims to create a simpler and easier booking system, while also creating better relationships between artists and performance spaces.
@@ -94,14 +99,18 @@ const IndexPage = () => (
 
             </div>
             <div className="resume-date text-md-right">
-              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://musos-8f0c3.firebaseapp.com/#/">Live Demo</a></span>
+
             </div>
+
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Board Files</h3>
               <div className="subheading mb-3">Ruby on Rails</div>
+              <div className=" mb-3">
+              <span className="box"><a href="https://github.com/phunky-phresh/project01">Git Repo</a></span><span className="box"><a href="https://board-reviews.herokuapp.com/">Live Demo</a></span>
+              </div>
               <p>
                 Board Files is my first project using a database to store, create, update and delete data. Board files is a platform to add and review snowboards. It would also include educational content to give better understanding of the technology involved with snowboard design, technology that can have significant influence over a snowboards compatibility with a rider based off their experience, where they're using it and how they're using it.
               </p>
@@ -115,7 +124,6 @@ const IndexPage = () => (
 
             </div>
             <div className="resume-date text-md-right">
-              <span className="box"><a href="https://github.com/phunky-phresh/project01">Git Repo</a></span><span className="box"><a href="https://board-reviews.herokuapp.com/">Live Demo</a></span>
             </div>
           </div>
 
@@ -142,6 +150,10 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Tic Tac Toe</h3>
               <div className="subheading mb-3">JavaScript | HTML5/CSS3 | jQuery</div>
+              <div className=" mb-3">
+              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
+              </div>
+
               <p>
                 Tic Tac Toe - Project0. This was my first major project involving JavaScript, jQuery and HTML5/CSS3 to build the classic game tic tac toe. The main learning curve was definitely the implenetation of my our logic to determine wins, losses and draws in a two player game.
               </p>
@@ -149,7 +161,6 @@ const IndexPage = () => (
 
             </div>
             <div className="resume-date text-md-right">
-              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
             </div>
           </div>
         </div>
