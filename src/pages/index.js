@@ -25,15 +25,15 @@ const IndexPage = () => (
           <div className="subheading mb-5">
           <h3 className="mb-0">Junior Software Engineer</h3>
           </div>
-          <p className="lead mb-5">
-          I’m a recent Software Engineering Immersive Graduate from General Assembly, Sydney. After completing my Bachelor of Creative Arts: Graphic Design degree, i’ve spent time working in a range of industries both in Australia and abroad.
-          I consistently aim to improve on my own ability and skills while maintaining effective communication with colleagues and clients. I take pride in delivering my best and being a reliable employee. I’m excited to see what new opportunities become available in Software Engineering as i do enjoy designing, but to deliver a finished, interactive product is my true passion.
-          </p>
+            <p className="lead mb-5">
+            I’m a recent Software Engineering Immersive Graduate from General Assembly, Sydney. After completing my Bachelor of Creative Arts: Graphic Design degree, i’ve spent time working in a range of industries both in Australia and abroad.
+            I consistently aim to improve on my own ability and skills while maintaining effective communication with colleagues and clients. I take pride in delivering my best and being a reliable employee. I’m excited to see what new opportunities become available in Software Engineering as i do enjoy designing, but to deliver a finished, interactive product is my true passion.
+            </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a target="_blank" key={url} href={url}>
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -41,7 +41,7 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>
                 <i className=" fa fa-envelope"></i>
             </a>
-            <a href={cv}>
+            <a target="_blank" href={cv}>
                 <i className=" fa fa-address-card"></i>
             </a>
           </div>
@@ -68,10 +68,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section
-        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="projects"
-      >
+      <section className="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
         <div className="w-100">
           <h2 className="mb-5">Projects</h2>
 
@@ -80,23 +77,22 @@ const IndexPage = () => (
               <h3 className="mb-0">mixedBiz.</h3>
               <div className="subheading mb-3">React.js | Firebase</div>
               <div className=" mb-3">
-              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://musos-8f0c3.firebaseapp.com/#/">Live Demo</a></span>
+                <span className="box"><a target="_blank" href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a target="_blank" href="https://musos-8f0c3.firebaseapp.com/#/">Live Demo</a></span>
               </div>
 
-
               <h4 style={{color: '#f76550'}} className="mb-3">*Currently refining messaging component</h4>
-              <p>
-                mixedBiz. is an idea to streamline the live music booking process. By creating a specific social platform for live performers to connect with venues, mixedBiz aims to create a simpler and easier booking system, while also creating better relationships between artists and performance spaces.
-              </p>
-              <ul>
-                <li>Front end built with React.js and database with Firebase</li>
-                <li>First version includes a realtime messaging platform.</li>
-                <li>Hard coded a realtime messaging app with JavaScript through the React framework.</li>
-                <li>Implemented Firebase Firestore for secure login and as a more flexible database for a one-week project.</li>
-              </ul>
+              <div className="hide-content">
+                <p>
+                  mixedBiz. is an idea to streamline the live music booking process. By creating a specific social platform for live performers to connect with venues, mixedBiz aims to create a simpler and easier booking system, while also creating better relationships between artists and performance spaces.
+                </p>
+                <ul>
+                  <li>Front end built with React.js and database with Firebase</li>
+                  <li>First version includes a realtime messaging platform.</li>
+                  <li>Hard coded a realtime messaging app with JavaScript through the React framework.</li>
+                  <li>Implemented Firebase Firestore for secure login and as a more flexible database for a one-week project.</li>
+                </ul>
+              </div>
                 <img alt="screen-shot-mixedBiz" className="project-img" src={mixedbiz} />
-
-
             </div>
             <div className="resume-date text-md-right">
 
@@ -109,7 +105,7 @@ const IndexPage = () => (
               <h3 className="mb-0">Board Files</h3>
               <div className="subheading mb-3">Ruby on Rails</div>
               <div className=" mb-3">
-              <span className="box"><a href="https://github.com/phunky-phresh/project01">Git Repo</a></span><span className="box"><a href="https://board-reviews.herokuapp.com/">Live Demo</a></span>
+                <span className="box"><a target="_blank" href="https://github.com/phunky-phresh/project01">Git Repo</a></span><span className="box"><a target="_blank" href="https://board-reviews.herokuapp.com/">Live Demo</a></span>
               </div>
               <p>
                 Board Files is my first project using a database to store, create, update and delete data. Board files is a platform to add and review snowboards. It would also include educational content to give better understanding of the technology involved with snowboard design, technology that can have significant influence over a snowboards compatibility with a rider based off their experience, where they're using it and how they're using it.
@@ -151,9 +147,8 @@ const IndexPage = () => (
               <h3 className="mb-0">Tic Tac Toe</h3>
               <div className="subheading mb-3">JavaScript | HTML5/CSS3 | jQuery</div>
               <div className=" mb-3">
-              <span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
+                <span className="box"><a target="_blank" href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a target="_blank" href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
               </div>
-
               <p>
                 Tic Tac Toe - Project0. This was my first major project involving JavaScript, jQuery and HTML5/CSS3 to build the classic game tic tac toe. The main learning curve was definitely the implenetation of my our logic to determine wins, losses and draws in a two player game.
               </p>
@@ -222,7 +217,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a target="_blank" key={url} href={url}>
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -232,7 +227,7 @@ const IndexPage = () => (
                 <i className=" fa fa-envelope"></i>
 
             </a>
-            <a href={cv}>
+            <a target="_blank" href={cv}>
 
                 <i className=" fa fa-address-card"></i>
             </a>
