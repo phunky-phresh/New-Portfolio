@@ -18,16 +18,12 @@ const IndexPage = () => (
         id="about"
       >
         <div className="w-100">
-          <h1 className="mb-3">
+          <h1 className="mb-2">
             {config.firstName}
             {config.lastName}
           </h1>
           <div className="subheading mb-5">
-          <span className="box">
-          <a href={cv}>Resume</a>
-          </span>
-          <span> · </span>
-            <a href={`mailto:${config.email}`}>{config.email}</a>
+          <h3 className="mb-0">Junior Software Engineer</h3>
           </div>
           <p className="lead mb-5">
           I’m a recent Software Engineering Immersive Graduate from General Assembly, Sydney. After completing my Bachelor of Creative Arts: Graphic Design degree, i’ve spent time working in a range of industries both in Australia and abroad.
@@ -42,7 +38,31 @@ const IndexPage = () => (
                 </a>
               );
             })}
+            <a href={`mailto:${config.email}`}>
+                <i className=" fa fa-envelope"></i>
+            </a>
+            <a href={cv}>
+                <i className=" fa fa-address-card"></i>
+            </a>
           </div>
+        </div>
+      </section>
+
+      <hr className="m-0" />
+
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="skills"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Skills</h2>
+
+          <div className="subheading mb-3">
+            Programming Languages &amp; Tools
+          </div>
+          <Skills />
+
+
         </div>
       </section>
 
@@ -180,24 +200,6 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Skills</h2>
-
-          <div className="subheading mb-3">
-            Programming Languages &amp; Tools
-          </div>
-          <Skills />
-
-
-        </div>
-      </section>
-
-      <hr className="m-0" />
-
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="awards"
       >
         <div className="w-100">
@@ -250,5 +252,11 @@ const IndexPage = () => (
 //     Agile Development &amp; Scrum
 //   </li>
 // </ul>
+
+// <span className="box">
+// <a href={cv}>Resume</a>
+// </span>
+// <span> · </span>
+//   <a href={`mailto:${config.email}`}>{config.email}</a>
 
 export default IndexPage;

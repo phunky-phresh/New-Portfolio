@@ -12,9 +12,9 @@ export class Sidebar extends Component {
     this.state = {
       tabs: [
         { content: 'About', href: 'about' },
+        { content: 'Skills', href: 'skills' },
         { content: 'Projects', href: 'projects' },
         { content: 'Education', href: 'education' },
-        { content: 'Skills', href: 'skills' },
         { content: 'Contact', href: 'awards' },
       ],
     };
