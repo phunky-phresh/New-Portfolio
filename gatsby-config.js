@@ -5,10 +5,6 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
   },
-  posts: {
-    title: 'the title',
-    body: 'this is the body of this title',
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
