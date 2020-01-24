@@ -147,7 +147,7 @@ const IndexPage = () => (
               <h3 className="mb-0">Tic Tac Toe</h3>
               <div className="subheading mb-3">JavaScript | HTML5/CSS3 | jQuery</div>
               <div className=" mb-3">
-                <span className="box"><a target="_blank" href="https://github.com/phunky-phresh/mixedBiz.">Git Repo</a></span><span className="box"><a target="_blank" href="https://github.com/phunky-phresh/mixedBiz.">Live Demo</a></span>
+                <span className="box"><a target="_blank" href="https://github.com/phunky-phresh/project0-TicTacToe">Git Repo</a></span><span className="box"><a target="_blank" href="https://phunky-phresh.github.io/project0-TicTacToe/">Live Demo</a></span>
               </div>
               <p>
                 Tic Tac Toe - Project0. This was my first major project involving JavaScript, jQuery and HTML5/CSS3 to build the classic game tic tac toe. The main learning curve was definitely the implenetation of my our logic to determine wins, losses and draws in a two player game.
